@@ -124,7 +124,7 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
- nbproject/
+
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
