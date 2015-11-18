@@ -1,0 +1,20 @@
+CREATE TABLE user(
+id int PRIMARY KEY,
+NAME varchar(8)  NOT NULL, 
+ 
+TEDIAN  VARCHAR(20)
+) ;
+INSERT INTO user (id,NAME,TEDIAN) VALUES (1,'VILL','PLAYPLAY');
+
+
+忽略错误：error_reporting=E_ALL&~E_NOTICE&~E_DEPRECATED
+修改密码：
+D:mysql\bin\mysqld-nt --skip-grant-tables
+   update user set password=password('admin')where user='root';
+   flush privileges;
+   exit;
+update user set password=password('admin') where user='root' and host='localhost';
+
+
+导数据库文件：
+ 运行到相应bin下 mysql -u root -padmin ots < c:\ots.sql

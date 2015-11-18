@@ -1,4 +1,4 @@
-#git command
+﻿#git command
 git branch -va
 　　可以查看本地+远程分支列表
 git branch -v
@@ -24,5 +24,18 @@ git branch -d dev
 通过此语法，你可以把本地分支推送到某个命名不同的远程分支：若想把远程分支叫作awesomebranch，可以用git push origin serverfix:awesomebranch 来推送数据
 　git branch -va
 　　可以查看本地+远程分支列表
+设置全局的忽略文件
+git config  --global core.excludesfile ~/.gitignore_global(文件名)
 
-　
+# 
+vi ~/.gitconfig (在vim中显示后面这个功能)
+
+git config --list 显示所有的配置变量
+git config --global --list 显示所有的全局配置变量
+提交后，用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别：
+　删除远程分支 git push origin :branchname
+建立远程分支 git push origin branchname
+
+重设分支地址 git remote set-url origin  git@git.utobo.net:orivon/newCrm.git
+
+ipconfig
