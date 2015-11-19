@@ -48,4 +48,13 @@ Sets the current head to the specified commit and optionally resets the index an
 
 会将最新的3次提交全部重置，就像没有提交过一样。
 
+
 根据--soft --mixed --hard，会对working tree和index和HEAD进行重置。
+
+ git 上往文件写东西：$ echo "hello b from a" >>b.txt
+$ git commit -a -m "hello a from b"相当于下面两步
+
+$ git add *.txt
+$ git commit -m "hello a from b"
+
+git rebase 从建一个基点
