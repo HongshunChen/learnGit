@@ -56,5 +56,12 @@ $ git commit -a -m "hello a from b"相当于下面两步
 
 $ git add *.txt
 $ git commit -m "hello a from b"
+当本地分支与远程分支之间发生冲突时候，执行下面步骤：
 
 git rebase 从建一个基点
+
+git add .
+修改冲突
+git rebase --continue
+
+git push origin master
