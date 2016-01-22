@@ -65,3 +65,13 @@ git add .
 git rebase --continue
 
 git push origin master
+删除远程分支
+git push origin :branch-name
+
+冒号前面的空格不能少，原理是把一个空分支push到server上，相当于删除该分支。
+
+git cherry-pick 版本号    找回以前丢失的提交
+查看安装扩展
+Administrator@WIN-SPH9A7GUHPN /e/xampp/php
+$ php -m |grep -i mysql（特别查找）
+mysql
