@@ -44,7 +44,10 @@ reset是指将当前head的内容重置，不会留任何痕迹。
 
 Sets the current head to the specified commit and optionally resets the index and working tree to match. 
 
- git reset --hard HEAD~3
+ git reset --hard HEAD~3  (merge的提交比较多的时候，不易用) 
+git reset --hard 4e5a7e70c186633e6938ee9ae5ba4f931dfea5de
+git push origin -f (强行推远程版本)
+
 
 会将最新的3次提交全部重置，就像没有提交过一样。
 
