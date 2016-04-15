@@ -78,3 +78,8 @@ git cherry-pick 版本号    找回以前丢失的提交
 Administrator@WIN-SPH9A7GUHPN /e/xampp/php
 $ php -m |grep -i mysql（特别查找）
 mysql
+
+
+本地改动不像提交
+git add .
+git reset --hard   HEAD
