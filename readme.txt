@@ -1,4 +1,8 @@
 ﻿#git command
+ 生成key :
+ ssh-keygen   
+ 查看key:
+notepad.exe  ~/.ssh/id_rsa.pub
 git branch -va
 　　可以查看本地+远程分支列表
 git branch -v
