@@ -87,3 +87,5 @@ mysql
 本地改动不像提交
 git add .
 git reset --hard   HEAD
+
+git diff-tree --no-commit-id  --name-only -r 446062b5822a18b360ed6bd9b0dfb9dd94132346   |xargs.exe tar -rf link.tar
